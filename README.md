@@ -28,11 +28,16 @@ npm install vite-ssr-plugin
 ```
 2. Create a file named `static-entry.ts`
 ```typescript
-import { createSSRApp } from 'vue'
+import { createSSRApp, createApp } from 'vue'
 import Static from './Static.vue'
 
 export function createStaticApp() {
-  return createSSRApp(Static)
+  // Currently, static generation is only used in production in order to reduce complexity in development.
+  if (import.meta.env.PROD) {
+    return createSSRApp(Static)
+  } else {
+    return createApp(Static)
+  }
 }
 
 export function renderStatic() {
