@@ -1,0 +1,37 @@
+{
+  "name": "vite-static-component",
+  "version": "0.0.2",
+  "description": "",
+  "keywords": [],
+  "author": "plutonist",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vite": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.12",
+    "unbuild": "^1.0.2",
+    "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "node-html-parser": "^6.1.4"
+  }
+}
