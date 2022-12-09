@@ -3,6 +3,7 @@
   "exclude": ["**/*.spec.ts"],
   "compilerOptions": {
     "outDir": "dist",
+    "lib": ["ES2022"],
     "target": "ES2020",
     "module": "ES2020",
     "moduleResolution": "Node",
