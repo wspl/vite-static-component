@@ -77,3 +77,6 @@ export default defineConfig({
 ```
 
 5. Now, you can build your project to see the resulting output.
+
+## License
+MIT License © 2022-PRESENT Plutonist Fu
