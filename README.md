@@ -6,7 +6,7 @@ A Vite plugin that allows you to pre-render a subset of components in your proje
 To install this plugin, run the following command:
 
 ```sh
-npm install vite-static-component
+npm i -D vite-static-component
 ```
 ## Usage
 1. Add a mount anchor to an HTML file, such as `#static`
